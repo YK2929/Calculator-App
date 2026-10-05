@@ -33,14 +33,14 @@ public class Dentaku {
 
         //米ドルから日本円の場合//
         } else if (choice == 2 ) {
-            System.out.print("変換したい米ドルを入力してください");
+            System.out.print("変換したい米ドルを入力してください：");
             double dollarAmount = scanner.nextDouble();
 
             double yenResult = dentaku.convertDollarToYen(dollarAmount);
             System.out.println( dollarAmount + "ドルは約" + yenResult + "円です。");
 
         } else {
-            System.out.println("無効な選択です。");
+            System.out.println("エラー：無効な選択です。");
         }
 
         scanner.close();
