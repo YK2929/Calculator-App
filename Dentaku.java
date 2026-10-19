@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Dentaku {
@@ -25,17 +26,21 @@ public class Dentaku {
         double num2 = scanner.nextDouble();
 
         // 4. 計算と結果の表示
+        double result = 0;
+
         if (operator.equals("+")) {
-            System.out.println("計算結果: " + (num1 + num2));
+            result = num1 + num2;
         } else if (operator.equals("-")) {
-            System.out.println("計算結果: " + (num1 - num2));
+            result = num1 + num2;
         } else if (operator.equals("*")) {
-            System.out.println("計算結果: " + (num1 * num2));
+            result = num1 + num2;
         } else if (operator.equals("/")) {
-            System.out.println("計算結果: " + (num1 / num2));
+            result = num1 + num2;
         } else {
-            System.out.println("不正な演算子が入力されました");
+            result = num1 + num2;
         }
+
+        System.out.printf("計算結果: %.8f\n", result);
 
         scanner.close();
     }
